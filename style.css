@@ -184,3 +184,13 @@ i {
 .player-current-score {
   font-size: 30px;
 }
+
+/* ----------------------------   WINNER   ---------------------------- */
+
+.winner {
+  background-color: #f7f7f7;
+}
+.winner .player-name {
+  font-weight: 300;
+  color: #145b32;
+}
