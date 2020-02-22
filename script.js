@@ -24,7 +24,7 @@ const getRandomDice = () => {
     document.getElementById('dice-1').src = `./img/dices/dice-${dice1}.png`;
     document.getElementById('dice-2').src = `./img/dices/dice-${dice2}.png`;
 
-    // 3. Update the Roun Score If there was NOT a 1
+    // 3. Update the Round Score If there was NOT a 1
     if (dice1 !== 1 && dice2 !== 1) {
       // Add Score
       roundScore += dice1 + dice2;
@@ -60,8 +60,8 @@ const holdScore = () => {
     if (scores[activePlayer] >= winningScore) {
       document.querySelector(`#name-${activePlayer}`).textContent = 'Winner';
 
-      document.getElementById('dice-1').display = 'none';
-      document.getElementById('dice-2').display = 'none';
+      document.getElementById('dice-1').style.display = 'none';
+      document.getElementById('dice-2').style.display = 'none';
 
       document
         .querySelector(`.player-${activePlayer}-panel`)
